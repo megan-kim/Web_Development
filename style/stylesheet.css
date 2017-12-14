@@ -1,59 +1,14 @@
-body
+.darkBG
 {
-  margin :0;
-}
-
-header
-{
-  background: black;
-  color: white;
-  padding: 15px 15px 0 15px;
-}
-
-header h1
-{
-  margin: 0;
-  display: inline;
-}
-
-nav ul
-{
-  margin: 0;
-  padding: 0 0 0 15px;
-  display: inline;
-}
-
-nav ul li
-{
-  display: inline-block;
-  list-style-type: none;
   background: #999;
-  color: white;
-  padding: 5px 15px; //t r b l
 }
 
-nav ul li a
+.darkerBG
 {
-   color: white;
+  background: #666;
 }
 
-.row
-{
-  clear: both;
-}
-
-.col
+.darkestBG
 {
   background: #333;
-  border-radius: 5px;
-  color: white;
-  padding: 10px .5%;
-  margin: .5%;
-  float: left;
-  width: 31%;
-}
-
-footer
-{
-  clear: both;
 }

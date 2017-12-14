@@ -1,40 +1,52 @@
 <!doctype html>
 <html>
 	<head>
-		<title> CSS Layouts </title>
+		<title> Bootstrap Layouts </title>
 	 	<link href="style/stylesheet.css" rel="stylesheet" type="text/css"/>
+		<link href="bootstrap\css\bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="bootstrap\css\bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
 	 </head>
 
 	<body>
-		<header>
-				<nav>
-					<h1> My Page </h1>
-						<ul>
-								<li> <a href="#"> Home </a></li>
-								<li> <a href="#"> Blog </a></li>
-								<li> <a href="#"> About </a></li>
-								<li> <a href="#"> Contact </a></li>
-								<li> <a href="#"> Links </a></li>
-						</ul>
-				</nav>
-		 </header>
-
-		 <div class="row">
-			 <div class="col"> Col 1 </div>
-			 <div class="col"> Col 2 </div>
-			 <div class="col"> Col 3 </div>
-			
-		</div>
 
 		<div class="row">
-			<div class="col"> Col 1 </div>
-			<div class="col"> Col 2 </div>
-	 </div>
+			<div class="container">
+				<div class="col-sm-6 col-xs-12">
+					<p> Buttons </p>
+					<a href="#" class="btn btn-default"> Click Me </a>
+					<a href="#" class="btn btn-primary"> Click Me </a>
+					<a href="#" class="btn btn-danger"> Click Me </a>
+					<a href="#" class="btn btn-warning"> Click Me </a>
+					<a href="#" class="btn btn-success"> Click Me </a>
+				</div>
 
-	 <div class="row">
-		 <div class="col"> Col 1 </div>
-	</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 col-xs-6">
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									Widget 1
+								</div>
+								<div class="panel-body">
+									<a href="#" class="btn btn-primary"> Do Stuff </a>
+	 							</div>
+							</div>
+						</div>
+					</div>
+			</div>
+				<div class="col-sm-3 col-xs-6">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							Widget 2
+						</div>
+						<div class="panel-body">
+							<span class="text-success"> Panel content </span>
+						</div>
+				</div>
+			</div>
+		</div>
 
 		<footer>2017 @kim_the_coder </footer>
+		<script src="bootstrap\js\bootstrap.min.js"></script>
 	</body>
 </html>
