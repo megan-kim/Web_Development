@@ -1,4 +1,9 @@
-p
+footer
 {
-  color: blue;
+  background: #999;
+  border: 1.5px solid #333;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: cursive;
 }
