@@ -1,5 +1,63 @@
+/*VARIABLES*/
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+
+/*DATATYPES*/
+
+/* null */
+$i-am-null: null;
+
+/* boolean */
+$i-am-true: true;
+$i-am-false: false;
+
+/* number */
+$a-number: 7;
+
+/* strings */
+$name: 'Megan Chinian';
+$name-together: 'Megan' + 'Chinian';
+
+/* color */
+$colour: lighten(white, 15%); //b8dc70
+$venus: #998099;
+
+/* arithmetic operators */
+h1
+{
+  font-size: 4px + 2;
+}
+
+h2
+{
+  font-size: 4px - 2;
+  @include font-fl(sans-serif);
+}
+
+h3
+{
+  font-size: (0/2);
+  opacity: random(4)/5;
+  padding-right: 2px / 4px + 3px;
+}
+
+h4
+{
+  width: 3px * 5 + 5px;
+  width: 3 * (5px + 5px);
+  width: 3px + (6px / 2) * 3;
+}
+
+/* Equality operators */
+@mixin font-fl($font){
+  &::after{
+    @if (type-of($font) == string) {
+        content: 'my font is: #{$font}.';
+      } @else{
+        content: 'sorry the argument #{font} is a #{type-of($font)}.';
+      }
+    }
+  }
 
 body
 {
